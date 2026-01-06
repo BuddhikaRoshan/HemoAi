@@ -23,7 +23,7 @@ The system is designed to detect and classify four major blood disorders:
 ### Key Features
 
 - **Multi-Disease Detection:** Unified framework capable of detecting multiple blood disorders simultaneously
-- **High Accuracy:** Target diagnostic accuracy ≥95% for all disease categories
+- **High Accuracy:** Target high diagnostic accuracy for all disease categories
 - **Explainable AI:** Integration of Grad-CAM, SHAP, and attention mechanisms for transparent decision-making
 - **Real-Time Inference:** Analysis completed in <5 seconds per blood smear image
 - **Cost-Effective:** Designed for deployment in low-resource hospital settings
@@ -55,7 +55,7 @@ The system is designed to detect and classify four major blood disorders:
 ### Main Objective
 
 To design, develop, and validate an intelligent and explainable AI-based diagnostic system for blood disorder detection, achieving:
-- Diagnostic accuracy ≥95% for all disease categories
+- High Diagnostic accuracy for all disease categories
 - Real-time inference (<5 seconds per analysis)
 - Clinical deployment readiness within 12 months
 - Cost-effective solution suitable for Sri Lankan healthcare infrastructure
