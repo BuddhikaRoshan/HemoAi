@@ -16,7 +16,7 @@ This project presents an intelligent, explainable AI-powered diagnostic framewor
 The system is designed to detect and classify four major blood disorders:
 
 1. **Leukemia** - Detection and classification of blood cancer subtypes (ALL, AML)
-2. **Thalassemia** - Identification of inherited hemoglobin disorders (α-thalassemia, β-thalassemia)
+2. **Thalassemia** - Automated identification of thalassemia 
 3. **Anemia** - Detection of iron deficiency anemia and related morphological changes
 4. **Malaria** - Identification of parasitized cells and Plasmodium species classification
 
