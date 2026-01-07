@@ -1,0 +1,85 @@
+// Datasource configuration
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+// User Model - Medical Professionals
+model User {
+  id                String              @id @default(auto()) @map("_id") @db.ObjectId
+  fullName          String
+  email             String              @unique
+  password          String
+  contactNumber     String
+  imageUrl          String?
+  hospitalName      String              // Hospital/Institution name
+  role              String              // Laboratory Technician, Hematologist, Medical Officer, Pathologist, Researcher, Other
+  department        String?             // Department (optional)
+  licenseNumber     String              // Professional License Number (SLMC/SLMLT)
+  isVerified        Boolean             @default(false) // Account verification status
+  isActive          Boolean             @default(true)  // Account active status
+  
+  // Relations
+  diagnoses         Diagnosis[]         // One-to-many relation with Diagnosis
+  patients          Patient[]           // One-to-many relation with Patient
+  annotations       ImageAnnotation[]   // One-to-many relation with ImageAnnotation
+  
+  createdAt         DateTime            @default(now())
+  updatedAt         DateTime            @updatedAt
+}
+
+model Patient {
+  id                String              @id @default(auto()) @map("_id") @db.ObjectId
+  fullName          String
+  dateOfBirth       DateTime
+  gender            String
+  contactNumber     String
+  address           String?
+  bloodGroup        String?
+  medicalHistory    String?
+  
+  // Relations
+  userId            String              @db.ObjectId
+  user              User                @relation(fields: [userId], references: [id])
+  diagnoses         Diagnosis[]
+  
+  createdAt         DateTime            @default(now())
+  updatedAt         DateTime            @updatedAt
+}
+
+model Diagnosis {
+  id                String              @id @default(auto()) @map("_id") @db.ObjectId
+  diagnosisDate     DateTime            @default(now())
+  diagnosisType     String
+  diagnosisResult   String
+  notes             String?
+  
+  // Relations
+  userId            String              @db.ObjectId
+  user              User                @relation(fields: [userId], references: [id])
+  patientId         String              @db.ObjectId
+  patient           Patient             @relation(fields: [patientId], references: [id])
+  annotations       ImageAnnotation[]
+  
+  createdAt         DateTime            @default(now())
+  updatedAt         DateTime            @updatedAt
+}
+
+model ImageAnnotation {
+  id                String              @id @default(auto()) @map("_id") @db.ObjectId
+  imageUrl          String
+  annotationData    Json
+  
+  // Relations
+  userId            String              @db.ObjectId
+  user              User                @relation(fields: [userId], references: [id])
+  diagnosisId       String?             @db.ObjectId
+  diagnosis         Diagnosis?          @relation(fields: [diagnosisId], references: [id])
+  
+  createdAt         DateTime            @default(now())
+  updatedAt         DateTime            @updatedAt
+}
