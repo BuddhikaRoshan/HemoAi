@@ -150,10 +150,6 @@ To design, develop, and validate an intelligent and explainable AI-based diagnos
 │  └─────────────────────────────────────────────────────────┘   │
 └─────────────────────────────────────────────────────────────────┘
 
-
-![System Architecture](https://raw.githubusercontent.com/USERNAME/REPO/main/images/architecture.png)
-
-
 ### Technical Architecture Details
 
 #### 1. Image Acquisition & Ingestion
