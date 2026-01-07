@@ -149,6 +149,7 @@ To design, develop, and validate an intelligent and explainable AI-based diagnos
 │  │  • Secure, PDPA-compliant data handling                 │   │
 │  └─────────────────────────────────────────────────────────┘   │
 └─────────────────────────────────────────────────────────────────┘
+![WhatsApp Image 2026-01-07 at 12 00 16](https://github.com/user-attachments/assets/73b8baae-f7b7-4e95-a8a4-7184a18a3378)
 
 ### Technical Architecture Details
 
