@@ -154,8 +154,9 @@ To design, develop, and validate an intelligent and explainable AI-based diagnos
 
 
 
-<img width="502" height="863" alt="image" src="https://github.com/user-attachments/assets/b815c7ab-7203-414b-8b3d-67593239a5a3" />
 
+
+![Picture1](https://github.com/user-attachments/assets/b26b2d6f-ae36-471e-8e08-a863f57eebb8)
 
 
 
