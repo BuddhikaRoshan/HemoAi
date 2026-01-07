@@ -151,14 +151,7 @@ To design, develop, and validate an intelligent and explainable AI-based diagnos
 └─────────────────────────────────────────────────────────────────┘
 
 
-
-
-
-
-
-![Picture1](https://github.com/user-attachments/assets/b26b2d6f-ae36-471e-8e08-a863f57eebb8)
-
-
+![Picture1](https://github.com/user-attachments/assets/e6706777-2961-4dac-a4a0-c89189f2d77f)
 
 
 ### Technical Architecture Details
