@@ -100,8 +100,6 @@ An **intelligent, explainable AI-powered diagnostic platform** that delivers:
 ![System Architecture](./assets/images/system-architecture.jpeg)
 ```
 
-```
-
 ### Technical Stack Summary
 
 | Layer | Technologies |
